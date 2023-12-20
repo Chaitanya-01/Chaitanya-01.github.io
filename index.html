@@ -1,31 +1,289 @@
 <!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  <title>Chaitanya Sriram</title>
-  
-  <meta name="author" content="Chaitanya Sriram">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-</head>
-<body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Chaitanya Sriram</name>
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-      </td>
-    </tr>
-  </tbody></table>
-        
-        
-</body>
+    <title>Chaitanya Sriram</title>
+
+    <meta name="author" content="Chaitanya Sriram">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Chaitanya Sriram
+                </p>
+                <p>I'm a master's student in <a href="https://www.wpi.edu/academics/departments/robotics-engineering">Robotics Engineering Program</a> at Worcester Polytechnic Institute(WPI), Worcester, Massachusetts.
+                </p>
+                <p>
+                  I got my bachelor's degree in <a href="https://mae.iith.ac.in/">Mechanical Engineering</a> with a minor in <a href="https://mae.iith.ac.in/ug-btech-ae-minor.html">Aerospace Engineering</a> from <a href="https://www.iith.ac.in/">Indian Institute of Technology, Hyderabad (IITH)</a> in 2022.
+                </p>
+                <p>
+                  I am interested in the areas of path planning and perception for robots and I am currently looking for co-ops, internships, and job opportunities.
+                </p>
+                <p style="text-align:center">
+                  <a href="mailto:cgaddipati@wpi.edu">Email</a> &nbsp;/&nbsp;
+                  <!-- <a href="data/my-CV.pdf">CV</a> &nbsp;/&nbsp; -->
+                  <a href="https://chaitanya-01.github.io/">CV</a> &nbsp;/&nbsp;
+                  <a href="https://www.linkedin.com/in/chaitanya-sriram-gaddipati/">LinkedIn</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/Chaitanya-01">Github</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:40%;max-width:40%">
+                <a href="media/image.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 60%;" alt="profile photo" src="media/image.jpg" class="hoverZoomLink" height="270"></a>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Projects</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    
+            <!-- RBE595 P4 -->
+            <tr onmouseout="p4_stop()" onmouseover="p4_start()">
+              <td style="padding:20px;width:25%;vertical-align:top">
+                <div class="one">
+                  <div class="two" id='p4_gif2'>
+                    <img src='media/output3.gif' width="180" height="200">
+                  </div>
+                  <img src='media/output3dronepov.gif' width="180" height="200">
+                </div>
+              </td>
+              <script type="text/javascript">
+                function p4_start() {
+                  document.getElementById('p4_gif2').style.opacity = "1";
+                }
+
+                function p4_stop() {
+                  document.getElementById('p4_gif2').style.opacity = "0";
+                }
+                p4_stop()
+              </script>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <strong><papertitle>Optical flow based structure-less gap detection for drone flight</papertitle></strong>
+                <br>
+                <a href="https://github.com/Chaitanya-01/P4-navigating-the-unknown">project page</a>
+                <p></p>
+                <p>
+                  In this project a perception stack for the DJI Tello EDU quadcopter is designed to enabe it to autonomously navigate through irregular, unknown-shaped windows. The primary goal is to identify and fly through the largest gap in a wall. 
+                </p>
+                <p>
+                  The process begins by maneuvering the quadcopter to a position where the full gap is visible, followed by detecting the optical flow of the window. Subsequently, this flow data is postprocessed to outline the largest gap’s contour and pinpoint its center. With the center identified we employ visual servoing to guide the quadcopter to align its image center with the gap's center, facilitating a successful flight through the gap. <strong>(hover mouse on gif to change from drone pov to cameraman pov)</strong>
+                </p>
+              </td>
+            </tr>
+
+            <!-- RBE595 P3 -->
+            <tr onmouseout="p3_stop()" onmouseover="p3_start()">
+              <td style="padding:20px;width:25%;vertical-align:top">
+                <div class="one">
+                  <img src='media/VideoVisualization.gif' width="180" height="180">
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <strong><papertitle>Sim2Real Quadcopter Perception Stack</papertitle></strong>
+                <br>
+                <a href="https://github.com/Chaitanya-01/P3-mini-drone-race">project page</a>
+                <p></p>
+                <p>
+                  In this project, a perception stack for DJI Tello EDU quadcopter was developed to enable precise navigation through multiple windows, whose texture and approximate dimensions are known.
+                </p>
+                <p>
+                  To achieve this, simulation-to-reality (sim2real) techniques (such as domain randomization) were used to generate a diverse synthetic dataset from blender that is used to train a segmentation network that identifies the frontmost window. With center and corners obtained PnP technique is used to get 2D - 3D correspondances needed for navigation.
+                </p>
+              </td>
+            </tr>
+            
+            <!-- RBE595 P2 -->
+            <tr onmouseout="p2_stop()" onmouseover="p2_start()">
+              <td style="padding:20px;width:25%;vertical-align:top">
+                <div class="one">
+                  <div class="two" id='p2_gif2'>
+                    <img src='media/realmap1_frontview.gif' width="180" height="180">
+                  </div>
+                  <img src='media/view1.gif' width="180" height="180">
+                </div>
+              </td>
+              <script type="text/javascript">
+                function p2_start() {
+                  document.getElementById('p2_gif2').style.opacity = "1";
+                }
+
+                function p2_stop() {
+                  document.getElementById('p2_gif2').style.opacity = "0";
+                }
+                p2_stop()
+              </script>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <strong><papertitle>Quadcopter motion planning stack</papertitle></strong>
+                <br>
+                <a href="https://github.com/Chaitanya-01/P2-Path-Following-RBE595">project page</a>
+                <p></p>
+                <p>
+                  In this project a RRT* path planning and minimum snap trajectory generation (motion planning) stack is implemented for the 3D navigation of a DJI Tello Edu quadcopter in simulation (in blender) and is then tested on real quadcopter via NVIDIA Jetson Orin Nano.
+                </p>
+                <p>
+                  Additionally a cascaded PID controller gains for position and velocity control are tuned to follow the generated trajectory. <strong>(hover mouse on gif to change from real to sim)</strong>
+                </p>
+              </td>
+            </tr>
+            <!-- RBE595 P1 -->
+            <tr onmouseout="p1_stop()" onmouseover="p1_start()">
+              <td style="padding:20px;width:25%;vertical-align:top">
+                <div class="one">
+                  <img src='media/filters.gif' width="180" height="180">
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <strong><papertitle>3D attitude estimation using various filters</papertitle></strong>
+                <br>
+                <a href="https://github.com/Chaitanya-01/Magical-Filtering-RBE595">project page</a>
+                <p></p>
+                <p>
+                  Estimated the 3D orientation or attitude from 6 DOF IMU data (accelerometer and gyroscope) using only accelerometer data, only gyroscope data, a complimentary filter, a Madgwick filter, and an Unscented Kalman Filter.
+                </p>
+              </td>
+            </tr>
+            <!-- RBE550 final proj -->
+            <tr onmouseout="realmpc_stop()" onmouseover="realmpc_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <a href="media/simulation.gif"><img src='media/simulation.gif' width="180" height="180"></a>
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <strong><papertitle>Real-time collision free navigation for multiple
+                  autonomous agents</papertitle></strong>
+                <br>
+                <p></p>
+                <p>
+                  Created a decentralized collision avoidance strategy for multiple
+                  autonomous vehicles moving in an unstructured map configuration, which contains both static
+                  and passive dynamic obstacles.
+                </p>
+                <p>
+                  The implementation relies on collision avoidance using ”Generalized
+                  Velocity Obstacle (GVO)” and ”Acceleration-Velocity Obstacles (AVO)” methods, and utilizes a
+                  model predictive control (MPC) strategy to generate local collision-free trajectories for each
+                  autonomous vehicle.
+                </p>
+                <p>
+                  Compared the performance of AVO and GVO on multiple map
+                  configurations. <strong>(click on gif for full screen view)</strong>
+                </p>
+              </td>
+            </tr>
+            <!-- RBE550 valet -->
+            <tr onmouseout="valet_stop()" onmouseover="valet_start()">
+              <td style="padding:20px;width:25%;vertical-align:top">
+                <div class="one">
+                  <img src='media/truck.gif' width="180" height="180">
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <strong><papertitle>A* kinematic path planner under non holonomic constraints</papertitle></strong>
+                <br>
+                <a href="https://github.com/Chaitanya-01/valet-rbe550">project page</a>
+                <p></p>
+                <p>
+                  Created an A* kinematic path planner under non holonomic constraints for three vehicle types: Delivery Robot (differential drive), Car (Ackerman steering), Truck (A car with single trailer attached). The goal is to park between two vehicles while avoiding obstacles in between.
+                </p>
+              </td>
+            </tr>
+
+            <!-- RBE550 Transmission -->
+            <tr onmouseout="transmission_stop()" onmouseover="transmission_start()">
+              <td style="padding:20px;width:25%;vertical-align:top">
+                <div class="one">
+                  <img src='media/animation_bidirectional.gif' width="180" height="180">
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <strong><papertitle>3D RRT Planner for gear shaft removal</papertitle></strong>
+                <br>
+                <a href="https://github.com/Chaitanya-01/3D-RRT-Planner-for-Gear-shaft-removal">project page</a>
+                <p></p>
+                <p>
+                  Created a RRT based motion planner to remove the mainshaft from the transmission case of a gearbox without any collisions to prevent damages.
+                </p>
+              </td>
+            </tr>
+            
+            <!-- RBE502 final proj -->
+            <tr onmouseout="control_stop()" onmouseover="control_start()">
+              <td style="padding:20px;width:25%;vertical-align:top">
+                <div class="one">
+                  <img src='media/rbe502.gif' width="180" height="180">
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <strong><papertitle>Robust Trajectory Tracking for Quadrotor with Sliding Mode Control</papertitle></strong>
+                <br>
+                <a href="https://github.com/Chaitanya-01/robust-traj-tracking-with-SMC-rbe502">project page</a>
+                <p></p>
+                <p>
+                  Designed a sliding mode controller for altitude and attitude control of Crazyflie 2.0 drone to track desired trajectories between desired waypoints. The controller is robust to external disturbances.
+                </p>
+              </td>
+            </tr>
+
+          </tbody></table>
+
+          
+          <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+            <tr>
+              <td>
+                <h2>Publications</h2>
+              </td>
+            </tr>
+          </tbody></table> -->
+          <br>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Publications</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+            
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle"><img src="media/ieee.png" width="180" height="120"></td>
+              <td width="75%" valign="top">
+                <p>
+                  N. P. Babu M, P. Kumar Duba, <strong>G. C. Sriram </strong> and P. Rajalakshmi, "<strong> Bio-Inspired Micro Aerial
+                  Vehicle (MAV)</strong>", 2022 IEEE IAS Global Conference on Emerging Technologies (GlobConET), Arad, Romania, 2022,
+                  pp. 661-666, doi: <a href="https://doi.org/10.1109/GlobConET53749.2022.9872352">10.1109/GlobConET53749.2022.9872352</a>.
+                </p>
+              </td>
+            </tr>
+            
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:right;font-size:small;">
+                  Source code and style cloned from <a href="https://jonbarron.info/">Jon Barron's website</a>.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>
-
