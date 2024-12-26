@@ -61,9 +61,41 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     
+            <!-- Personal Project1 -->
+            <tr onmouseout="pp1_stop()" onmouseover="pp1_start()">
+              <td style="padding:20px;width:25%;vertical-align:top">
+                <div class="one">
+                  <div class="two" id='pp1_gif2'>
+                    <img src='media/depth.gif' width="180" height="180">
+                  </div>
+                  <img src='media/rgb.gif' width="180" height="180">
+                </div>
+              </td>
+              <script type="text/javascript">
+                function pp1_start() {
+                  document.getElementById('pp1_gif2').style.opacity = "1";
+                }
+
+                function pp1_stop() {
+                  document.getElementById('pp1_gif2').style.opacity = "0";
+                }
+                pp1_stop()
+              </script>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <strong><papertitle>Instant NeRF with Multiresolution Hash Encoding</papertitle></strong>
+                <br>
+                <a href="https://github.com/Chaitanya-01">project page(available soon)</a>
+                <p></p>
+                <p>
+                  Implemented the Instant Neural Graphics Primitives (Instant-NGP) paper for Neural Radiance Fields (NeRF), containing a multiresolution hash encoding for efficient feature representation and a multi-cascade occupancy grid system for accelerated raymarching. Full pipeline is implemented using PyTorch and CUDA and tested on the lego dataset.
+                </p>
+                
+              </td>
+            </tr>
+            
             <!-- RBE549 P0 -->
             <tr>
-              <td style="padding:20px;width:25%;vertical-align:top"><img src="media/pb_lite.png" width="180" height="200"></td>
+              <td style="padding:20px;width:25%;vertical-align:top"><img src="media/pb_lite.png" width="180" height="180"></td>
               <td style="padding:20px;width:75%;vertical-align:middle">
                 <strong><papertitle>Probability based boundary detection</papertitle></strong>
                 <br>
@@ -80,9 +112,9 @@
               <td style="padding:20px;width:25%;vertical-align:top">
                 <div class="one">
                   <div class="two" id='p4_gif2'>
-                    <img src='media/output3.gif' width="180" height="200">
+                    <img src='media/output3.gif' width="180" height="180">
                   </div>
-                  <img src='media/output3dronepov.gif' width="180" height="200">
+                  <img src='media/output3dronepov.gif' width="180" height="180">
                 </div>
               </td>
               <script type="text/javascript">
@@ -301,6 +333,16 @@
           </tbody></table>
           <table width="100%" align="center" border="0" cellpadding="20"><tbody>
             
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle"><img src="media/ieee.png" width="180" height="120"></td>
+              <td width="75%" valign="top">
+                <p>
+                  N. E. Pacheco, <strong>C. S. Gaddipati</strong>, S. Farzan and L. Fichera, "<strong>Automatic Focus Adjustment for Single-Spot
+                  Tissue Temperature Control in Robotic Laser Surgery</strong>", in IEEE Transactions on Medical Robotics and Bionics,
+                  vol. 6, no. 4, pp. 1386-1390, Nov. 2024, doi: <a href="https://doi.org/10.1109/TMRB.2024.3464670">10.1109/TMRB.2024.3464670</a>.
+                </p>
+              </td>
+            </tr>
             <tr>
               <td style="padding:20px;width:25%;vertical-align:middle"><img src="media/ieee.png" width="180" height="120"></td>
               <td width="75%" valign="top">
